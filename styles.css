@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0f3854;
+  background: radial-gradient#0a2e38 0%, #000000 70%;
+  height: 100%;
+}
+
+.timer {
+  display: flex;
+  font-family: "Lato", sans-serif;
+  color: #0f3854;
+  text-align: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #daf6ff;
+  text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+  width: 350px;
+}
+
+.field {
+  flex-direction: column;
+  background-color: #0f3854;
+  border-radius: 5px;
+  text-align: center;
+}
+.field:not(:last-child) {
+  margin-right: 50px;
+}
+
+.label {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  padding: 20px 0 0;
+}
+.value {
+  font-size: 30px;
+}
